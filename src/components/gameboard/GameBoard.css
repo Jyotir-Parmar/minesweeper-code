@@ -1,0 +1,10 @@
+.gameBoard{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+}
+.gameBoard-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

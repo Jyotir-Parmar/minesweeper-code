@@ -1,0 +1,59 @@
+.cellContainer {
+	perspective: 100px;
+    transform-style: preserve-3d;
+    border: 1px solid #f3eeee;
+    min-width: 30px; 
+    min-height: 30px;
+    min-width: calc(100vw / 30);
+    min-height: calc(100vw / 30);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+.cellContainer, .front, .back {
+    min-width: 30px; 
+    min-height: 30px;
+    min-width: calc(100vw / 30);
+    min-height: calc(100vw / 30);
+}
+
+/* flip speed goes here */
+.cellContainer-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(-180deg);
+    border: 1px solid #fffafa;
+    background-color: #efefef;
+}
+
+.cellContainer-back--flip {
+	transform: rotateY(0deg);
+}
+.cellContainer-front--flip {
+	transform: rotateY(180deg);
+}
