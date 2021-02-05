@@ -13,4 +13,4 @@ Minesweeper is a single-player puzzle video game. The objective of the game is t
 ### 1. Clone the repo.
 ### 2. Install node if it is not already installed.
 ### 3. Install dependencies by running npm install / yarn add in root directory.
-### 4. To run the code use npm run serve / yarn serve
+### 4. To run the code use npm run start / yarn start
