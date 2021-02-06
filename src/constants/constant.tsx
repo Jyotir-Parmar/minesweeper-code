@@ -18,7 +18,7 @@ enum Difficulty {
 const GAME_MSGS = {
     GREAT_MOVE: "Great choice. You can select any adjacent cell.",
     ON_GOING_MSGS: ["Keep going. You are almost there.", "Nice choice.", "Be careful on your choice.", "You were lucky"],
-    WON: "Congratuation, you have won the game. Try more difficult level.",
+    WON: "Congratulation, you have won the game. Try more difficult level.",
     LOST: "Hard luck. You lost the game. Keep clicking on the cells to know remaining bombs or click on the New Game button to try again."
 }
 
